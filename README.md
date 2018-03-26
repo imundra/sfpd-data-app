@@ -3,7 +3,9 @@ Application that presents a data analysis of the San Francisco Police Department
 
 Overview:
 -app.py contains all the backend for the project. 
+
   -The first section consists of functions that perform various data parsing tasks. Some of the key features are outlined below:
+  
     -get_dispatch_times(): creates a dictionary 'dispatch_times' that has an address for its keys and something I created called a time_sum for values. A time_sum is a computation that takes into account the hour, minute, and second to create an easily comparable integer that represents a time on a particular day.
     -get_most_likely_dispatch(): takes a dictionary as input and returns the most likely dispatch that would be required for a particular time at an address. Useful for the dispatch predictor section of the website.
     -list_of_addresses() and addresses() were both functions that enabled me to create a text file containing all the addresses that were ever dispatched to so that I could have suggestions ready for users when they used my dispatch predictor feature.
