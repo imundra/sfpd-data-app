@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed top navbar example for Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- Javascript -->
+      <script src = "{{url_for('static', filename='datalist.js')}}"></script>
+   
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dataoverview/">Data Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dispatch_predictor/">Dispatch Predictor</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/dispatch_timing/">Dispatch Timing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/zipcodes/">Safety of Zipcodes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container"> 
+      <div class="jumbotron">
+	<br>
+	<br>
+        <h1 align = "center">Timing of Dispatches in San Francisco</h1>
+	<br>
+	<br>
+
+      <div class = "ui-widget">
+	<h3>Table showing the ten addresses in San Francisco that take the longest time to reach on average (all addresses considered must have received at least 5 dispatches to prevent outliers 		from affecting the data)</h4>
+	<img src = "../static/average_times.jpg">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Table showing the ten most extreme individual incidents that took the longest time to reach by dispatches.</h3>
+	<img src = "../static/extreme_times.jpg">
+	<br>
+	<br>
+      </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
