@@ -1,7 +1,6 @@
-Live link: https://sfpd-data-app.herokuapp.com/
-
-# sfpd-data-app
+## sfpd-data-app for the Capital One Software Engineering Summit
 Application that presents a data analysis of the San Francisco Police Department.
+Live link: https://sfpd-data-app.herokuapp.com/
 
 Overview:
 
