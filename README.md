@@ -1,11 +1,13 @@
+Live link: https://sfpd-data-app.herokuapp.com/
+
 # sfpd-data-app
-Application that presents a data analysis of the San Francisco Police Department
+Application that presents a data analysis of the San Francisco Police Department.
 
 Overview:
 
 -app.py contains all the backend for the project and is explained in detail below:
 
---The first section consists of functions that perform various data parsing tasks. Some of the key features are outlined below:--
+   --The first section consists of functions that perform various data parsing tasks. Some of the key features are outlined below:--
   
 1. get_dispatch_times(): creates a dictionary 'dispatch_times' that has an address for its keys and something I created called a time_sum for values. A time_sum is a computation that takes into account the hour, minute, and second to create an easily comparable integer that represents a time on a particular day.
     
@@ -19,8 +21,12 @@ Overview:
     
 6. safest_neighborhoods() was a function I used to generate the safety of zip codes section of my website. This function allowed me to analyze the number of potentially life threatening dispatches that were made to specific zip codes by using a dictionary that had zip codes as keys and a running total of potentially life threatening dispatches for that key as its value.
     
--- The second section of this program contains various app routes that lead to different sections of the website.--
+   -- The second section of this program contains various app routes that lead to different sections of the website.--
 
 1. Each section generally just performs a render_template function that displays the corresponding template. One function for the app route to the dispatch predictor is slightly more complicated and is explained below:
       
 2. dispatch_generator(): this function performs some rudimentary error checking to make sure that the data provided by the user is in fact an actual address and time. If the data inputted is invalid, an error template is returned. Another check that occurs is to make sure that the data entered has at least 5 actual dispatches that are close to it. If there isn't that much data that is similar to the data inputted, then a template is generated saying that there is insufficient data to make a prediction. If both these checks prove to be valid, an actual template with a dispatch prediction is shown.
+
+The images (tables and graphs) created were all done through the use of software such as Microsoft Excel (nothing too fancy), after taking the results of my python data parsing program as detailed above.
+
+The templates used in this project were mostly default bootstrap samples that I modified to fit my own purposes.
