@@ -29,4 +29,4 @@ Overview:
 
 The images (tables and graphs) created were all done through the use of software such as Microsoft Excel (nothing too fancy), after taking the results of my python data parsing program as detailed above.
 
-The templates used in this project were mostly default bootstrap samples that I modified to fit my own purposes.
+The templates used in this project were mostly default bootstrap samples that I modified to fit my own purposes. I also used some javascript to accomplish an autocomplete feature for the Dispatch Predictor section of my website. This was done in order to make it easier for users to enter addresses (rather than recall an entire address from memory).
