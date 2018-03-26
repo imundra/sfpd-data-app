@@ -7,7 +7,9 @@ Overview:
 
 -app.py contains all the backend for the project and is explained in detail below:
 
-   --The first section consists of functions that perform various data parsing tasks. Some of the key features are outlined below:
+ ## Python Data Parsing
+ 
+ The first section of app.py consists of functions that perform various data parsing tasks. Some of the key features are outlined below:
   
 1. get_dispatch_times(): creates a dictionary 'dispatch_times' that has an address for its keys and something I created called a time_sum for values. A time_sum is a computation that takes into account the hour, minute, and second to create an easily comparable integer that represents a time on a particular day.
     
@@ -21,7 +23,8 @@ Overview:
     
 6. safest_neighborhoods() was a function I used to generate the safety of zip codes section of my website. This function allowed me to analyze the number of potentially life threatening dispatches that were made to specific zip codes by using a dictionary that had zip codes as keys and a running total of potentially life threatening dispatches for that key as its value.
     
-   -- The second section of this program contains various app routes that lead to different sections of the website.
+ ## Flask Web App 
+ The second section of app.py contains various app routes that lead to different sections of the website.
 
 1. Each section generally just performs a render_template function that displays the corresponding template. One function for the app route to the dispatch predictor is slightly more complicated and is explained below:
       
