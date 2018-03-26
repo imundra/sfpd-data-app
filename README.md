@@ -3,6 +3,12 @@ I created an application that presents a data analysis of the San Francisco Poli
 
 There is a live link available at: https://sfpd-data-app.herokuapp.com/
 
+## Contents:
+- [Deliverables Overview](#Deliverables Overview)
+- [Python Data Parsing](#Python Data Parsing)
+- [Flask Web App](#Flask Web App)
+-[HTML, CSS, Javascript](#HTML, CSS, Javascript)
+
 ## Deliverables Overview
 
 Deliverable 1: Data Visuals -- The data visuals I have created are present in the Data Overview tab of the website.
