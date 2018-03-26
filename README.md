@@ -1,10 +1,7 @@
 ## sfpd-data-app for the Capital One Software Engineering Summit
-Application that presents a data analysis of the San Francisco Police Department.
-Live link: https://sfpd-data-app.herokuapp.com/
+I created an application that presents a data analysis of the San Francisco Police Department.
 
-Overview:
-
--app.py contains all the backend for the project and is explained in detail below:
+There is a live link available at: https://sfpd-data-app.herokuapp.com/
 
  ## Python Data Parsing
  
